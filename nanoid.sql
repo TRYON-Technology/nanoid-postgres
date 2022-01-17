@@ -5,7 +5,7 @@ RETURNS text AS $$
 DECLARE
   id text := '';
   i int := 0;
-  urlAlphabet char(64) := 'ModuleSymbhasOwnPr-0123456789ABCDEFGHNRVfgctiUvz_KqYTJkLxpZXIjQW';
+  urlAlphabet char(64) := '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz-';
   bytes bytea := gen_random_bytes(size);
   byte int;
   pos int;
